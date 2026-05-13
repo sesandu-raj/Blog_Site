@@ -10,11 +10,11 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                    @if (session('success'))
+                    <!-- @if (session('success'))
                         <div id="flash-message" class="mb-6 rounded-lg bg-green-100 px-4 py-3 text-green-800 dark:bg-green-900 dark:text-green-100">
                             {{ session('success') }}
                         </div>
-                    @endif
+                    @endif -->
 
                     <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
