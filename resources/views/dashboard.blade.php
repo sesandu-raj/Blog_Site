@@ -11,7 +11,7 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
                     @if (session('success'))
-                        <div class="mb-6 rounded-lg bg-green-100 px-4 py-3 text-green-800 dark:bg-green-900 dark:text-green-100">
+                        <div id="flash-message" class="mb-6 rounded-lg bg-green-100 px-4 py-3 text-green-800 dark:bg-green-900 dark:text-green-100">
                             {{ session('success') }}
                         </div>
                     @endif
@@ -120,4 +120,18 @@
             </div>
         </div>
     </div>
+
+    <!-- @if (session('success'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const flash = document.getElementById('flash-message');
+                if (flash) {
+                    setTimeout(() => {
+                        flash.style.transition = 'opacity 0.4s ease';
+                        flash.style.opacity = '0';
+                    }, 4500);
+                }
+            });
+        </script>
+    @endif -->
 </x-app-layout>
